@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "name":"Chrome浏览器书签同步管理工具",
+    "description":"Chrome书签同步管理工具，一个不需要VPN就能访问的书签工具！",
+    "version":"1.0",
+    "permissions":[
+        "notifications",
+        "bookmarks", 
+        "storage", 
+        "http://*/*", 
+        "https://*/*" 
+    ],
+    "icons":
+    {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "browser_action":{
+        "default_icon":"img/icon.png",
+        "default_title": "Chrome浏览器书签同步管理工具" ,
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["js/background.js","js/github.js","js/bookmark.js"]
+    },
+     "omnibox": {"keyword": "go"},
+     "homepage_url": "https://gitee.com/CLCoding/chrome-bookmark"
+}
